@@ -1,0 +1,26 @@
+<span>Playlist:</span>
+	<%= session[:sets][setname.to_sym]["name"] %>
+	<br>
+
+<span>Description:<span>
+	<%= session[:sets][setname.to_sym]["description"] %>
+	<br>
+
+<span>Videos:</span><br>
+	<% session[:sets][setname.to_sym]["vidnums"].each do |video| %>	
+		<iframe width="280" height="157"
+src=<%= "//www.youtube.com/embed/" + video %>></iframe>
+	<% end %>
+
+<form action=<%= "/sets/" + setname.to_s + "/play" %> method="get">
+	<input type="submit" value="Play">
+</form>
+
+<form action=<%= "/sets/" + setname.to_s + "/edit" %> method="get">
+	<input type="submit" value="Edit">
+</form>
+
+<form action= <%= "/sets/" + setname.to_s %> method="post">
+	<input type="hidden" name = "_method" value="delete">
+	<input type="submit" value="Delete">
+</form>

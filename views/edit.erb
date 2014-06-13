@@ -1,0 +1,20 @@
+<form action=<%= "/sets/" + setname.to_s %> method="post">
+	<input type="hidden" name = "_method" value="put">
+		<label>
+			Setlist
+			<input type="text" name="setname" value=<%= setname %>>
+		</label>
+				
+		<label>
+			Description
+				<input type="text" name="description" value=<%= session[:sets][setname.to_sym]["description"]%>>
+		</label>
+				
+		<label>
+			Videos
+			<textarea rows=4 name="videolist"><%=session[:sets][setname.to_sym]["vidnums"].join("\n") %>
+			</textarea> 
+		</label>
+	<input type="submit" value="Submit">
+</form>
+	

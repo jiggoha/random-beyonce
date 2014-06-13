@@ -1,0 +1,34 @@
+body {
+	background-image: url('background.jpg');
+	background-size: cover;
+}
+
+
+#navbar {
+	background-color: white;
+	padding: 7px;
+	border-radius: 5px;
+	opacity: 0.3;
+	z-index: -1;
+	/*background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(0,0,0,0.65)), color-stop(100%,rgba(0,0,0,0))); */
+}
+
+#navbar * {
+	color: black;
+	opacity: 1;
+}
+
+span {
+	background-color: white;
+}
+
+iframe {
+	margin: 0 auto;
+}
+
+#container{
+	width: 800px;
+	margin: 0 auto;
+	background-color: white;
+	opacity: 0.3;
+}
