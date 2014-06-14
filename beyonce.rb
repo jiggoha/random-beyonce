@@ -12,11 +12,9 @@ get '/' do
 		'//www.youtube.com/embed/LXXQLa-5n5w', 
 		'//www.youtube.com/embed/pZ12_E5R3qc']
 	vid1=videos.sample
-	result=vid1 +'?rel=0&autoplay=1'
+	result=vid1 #+'?rel=0&autoplay=1'
 
-	setname||=''
-
-	binding.pry
+	# setname||=''
 	
 	erb :index, :locals => {:result => result, :setname => setname}
 end
