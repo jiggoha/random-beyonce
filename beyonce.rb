@@ -14,7 +14,11 @@ get '/' do
 	vid1=videos.sample
 	result=vid1 #+'?rel=0&autoplay=1'
 
+
 	 setname||=''
+
+	
+
 	
 	erb :index, :locals => {:result => result, :setname => setname}
 end
