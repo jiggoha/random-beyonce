@@ -1,5 +1,7 @@
 <% if setname != "" %>
-	<h1><%= setname %></h1>
+	<h1 class="mainpagetitle"><%= setname %></h1>
+<% else %>
+	<h1 class="mainpagetitle">Random Beyonce</h1>
 <% end %>
 
 <iframe id="beyonce" width="853" height="480" src= <%= result %>></iframe>
