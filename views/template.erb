@@ -1,12 +1,19 @@
-<span>Playlist:</span>
-	<%= session[:sets][setname.to_sym] %>
+
+<div class=playlists id=oneset>
+
+<div class=words>
+
+<h1> Playlist: <%= setname%> </h1> 
+	
 	<br>
 
 <span>Description:<span>
 	<%= session[:sets][setname.to_sym]["description"] %>
 	<br>
+	<br>
+	<br>
 
-<span>Videos:</span><br>
+<span>Videos:</span><br><br> <br>
 	<% session[:sets][setname.to_sym]["vidnums"].each do |video| %>	
 		<iframe width="280" height="157"
 src=<%= "//www.youtube.com/embed/" + video %>></iframe>
@@ -24,3 +31,5 @@ src=<%= "//www.youtube.com/embed/" + video %>></iframe>
 	<input type="hidden" name = "_method" value="delete">
 	<input type="submit" value="Delete">
 </form>
+</div>
+</div>

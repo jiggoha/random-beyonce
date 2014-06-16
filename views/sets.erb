@@ -1,9 +1,10 @@
-<div class=playsits>
+
 
 <% session[:sets].each do |setname, values| %>
 	<div class=playsits>
 	<ul class=playlists>
 	<li> <h1> Playlist: <%= setname%> </h1> <%= session[:sets][setname.to_sym]["description"]%> 
+	<br>
 	<form action=<%= "/sets/" + setname.to_s %> method="get">
 		<input type="submit" value="View"> </form> </li> 
 	</form>

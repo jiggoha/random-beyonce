@@ -55,7 +55,14 @@ ul.playlists{
 	color: #FFFFFF;
 	list-style-image: url('http://www.gifs.net/Animation11/Nature/Stars/Yellow_twinkle.gif');
 }
+.words{
+	opacity:1;
+}
 
+#oneset{
+	max-width: 600px;
+	text-align: center;
+}
 .playlists{
 	background-color: black;
 	opacity: .6;
@@ -64,6 +71,6 @@ ul.playlists{
 	margin: 0 auto;
 	margin-bottom: 20px;
 	border-radius: 30px;
-	overflow: hidden;
-	
+			overflow: hidden;
+			color: white;	
 }
