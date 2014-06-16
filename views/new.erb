@@ -1,25 +1,22 @@
 <div class="playlists">
+	<form action="/sets" method="post">
+		<label class="new_label">
+			<p>Setlist</p>
+			<input type="text" name="setname">
+		</label>
 
-<form action="/sets" method="post">
-<label class="new_label">
-	Setlist
-	<input type="text" name="setname">
-	</label>
-<label class="new_label">
-	Description
-	<input type="text" name="description">
-	</label>
-<label class="new_label">
-	<br>Videos<br>
-	<textarea rows=4 name="videolist">
-		
-	</textarea> 
-</label>
+		<label class="new_label">
+			<p>Description</p>
+			<textarea rows=6 cols=30 name="description"></textarea>
+		</label>
 
-<div id="new_submit">    
-	<input type="submit" value="Submit">
-</div>
+		<label class="new_label">
+			<p>Videos</p>
+			<textarea rows=6 cols=30 name="videolist"></textarea> 
+		</label>
 
-</form>
-
+		<div id="new_submit">    
+			<input type="submit" value="Submit">
+		</div>
+	</form>
 </div>

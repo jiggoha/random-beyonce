@@ -1,26 +1,42 @@
-body {
+#background {
+	height: 100%;
+	width: 100%;
+	z-index: -1;
 	background-image: url('background.jpg');
 	background-size: cover;
+	-webkit-filter: blur(4px);
+	position: absolute;
+	margin-top: -15px;
+	margin-left: -8px;
+}
+
+#container{
+	z-index: 1;
 }
 
 #navbar {
+	margin-top: 15px;
 	width: 100% - 3px;
-	background: rgba(255,255,255,0.3);
+	background: rgba(0,0,0,0.6);
 	padding: 7px;
 	border-radius: 5px;
 	text-align: center;
-	/*background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(0,0,0,0.65)), color-stop(100%,rgba(0,0,0,0))); */
-}
-
-#navbar * {
-	color: red;
-	opacity: 1;
 }
 
 #navbar ul li a {
 	text-decoration: none;
-	color: black;
+	color: gray;
 	font-family: 'Open Sans', sans-serif;
+	transition: ease-in 0.2s;
+}
+
+#navbar ul li a:hover {
+	color: white;
+	transition: ease-in 0.2s;
+}
+
+#navbar, #beyonce {
+	box-shadow: 0px 0px 139px -15px rgba(238,238,238,1);
 }
 
 .main{
@@ -65,25 +81,27 @@ ul.playlists{
 }
 .playlists{
 	font-family: 'Open Sans', sans-serif;
-	background: rgba(0,0,0,0.6);
+	background: rgba(255,255,255,0.4);
 	padding: 40px;
-	max-width: 400px;
-	margin: 0 auto;
-	margin-bottom: 20px;
+	max-width: 600px;
+	margin: 60px auto;
 	border-radius: 30px;
 			overflow: hidden;
-			color: white;	
+			color: white;
+	box-shadow: 0px 0px 139px 5px rgba(238,238,238,1);
 }
 
 .new_label {
 	display: block;
 	color: white;
 	font-family: 'Open Sans', sans-serif;
+	text-align: center;
 }
 
-.new_label {
-	text-align: center;
-	margin: 10px;
+.new_label p {
+	margin-top: 20px;
+	margin-bottom: 3px;
+	color: white;
 }
 
 #new_submit {
